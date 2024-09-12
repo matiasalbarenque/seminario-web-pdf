@@ -1,0 +1,42 @@
+[
+  {
+    "fullname": "Esteban Miranda",
+    "address": "San Martin",
+    "img": "/img/users-persona/persona1.png",
+    "imgDescription": "Analista financiero en una empresa de inversiones en  Ciudad Autonoma de Buenos Aires.",
+    "position": "Analista Financiero",
+    "motivations": [
+      "Quiere mantener sus inversiones seguras y proteger sus datos financieros en línea.",
+      "Le interesa conocer más sobre cómo los sitios web utilizan su información y exige transparencia en el uso de cookies y tecnologías de seguimiento.",
+      "Busca plataformas que ofrezcan políticas claras de protección de datos y, preferiblemente, garantías de seguridad adicional como el uso de blockchain."
+    ],
+    "frustrations": [
+      "Encuentra que muchos sitios no explican de manera clara cómo protegerán su información.",
+      "Siente que, aunque los T&C contienen información relevante, son largos y difíciles de entender."
+    ],
+    "skills": [
+      {
+        "name": "Preocupacion por privacidad en linea",
+        "level": 85
+      }
+    ],
+    "setting": [
+      "Está por registrarse en una nueva plataforma de inversión, pero al leer los T&C, detecta que requieren una cámara para la verificación facial, lo cual lo incomoda y prefiere no continuar con el proceso. (CAMBIAR)",
+      "Busca alternativas que protejan mejor su información, como plataformas con autenticación de dos factores o mayor transparencia sobre la privacidad de datos. (CAMBIAR)"
+    ],
+    "demographicData": [
+      {
+        "name": "Edad",
+        "value": "28"
+      },
+      {
+        "name": "Área",
+        "value": "Negocios y Finanzas"
+      },
+      {
+        "name": "Hobbies",
+        "value": "Aficionado a las criptomonedas, deportes de aventura y el tenis."
+      }
+    ]
+  }
+]
