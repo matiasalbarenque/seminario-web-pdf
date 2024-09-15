@@ -3,6 +3,16 @@
     "fullname": "Esteban Miranda",
     "address": "San Martin",
     "img": "/img/users-persona/persona1.png",
+    "personInfo": [
+      {
+        "name": "Estado",
+        "value": "Soltero"
+      },
+      {
+        "name": "Educación",
+        "value": "UADE"
+      }
+    ],
     "imgDescription": "Analista financiero en una empresa de inversiones en  Ciudad Autonoma de Buenos Aires.",
     "position": "Analista Financiero",
     "motivations": [
@@ -37,6 +47,135 @@
         "name": "Hobbies",
         "value": "Aficionado a las criptomonedas, deportes de aventura y el tenis."
       }
-    ]
+    ],
+    "hobbies": {
+      "trademarks": [
+        ["google.svg", "netflix.svg", "nissan.svg"],
+        ["adidas.svg", "cabj.png", "hp.svg"]
+      ],
+      "apps": [
+        ["telegram.png", "youtube.png", "linkedin.png", "reddit.png", "whatsapp.png"],
+        ["hsbc.png", "instagram.png", "mercado-libre.png", "steam.png", "x.png"]
+      ]
+    }
+  },
+  {
+    "fullname": "Noelia Roura",
+    "address": "La Plata",
+    "img": "/img/users-persona/persona2.png",
+    "personInfo": [
+      {
+        "name": "Estado",
+        "value": "Soltero"
+      },
+      {
+        "name": "Educación",
+        "value": "UBA"
+      }
+    ],
+    "imgDescription": "Estudiante de Enfermería viviendo en La Plata, Buenos Aires.",
+    "position": "Estudiante de Enfermería",
+    "motivations": [
+      "Graduarse lo más pronto posible sin importale el promedio.",
+      "Conseguir un trabajo bien remunerado",
+      "Alquilar en CABA para estar mas cerca de su facultad."
+    ],
+    "frustrations": [
+      "Encuentra que muchos sitios no explican de manera clara cómo protegerán su información.",
+      "Siente que, aunque los T&C contienen información relevante, son largos y difíciles de entender."
+    ],
+    "skills": [
+      {
+        "name": "Preocupacion por privacidad en linea",
+        "level": 75
+      }
+    ],
+    "setting": [
+      "Se encuentra cursando el penultimo año de su carrera.",
+      "Trabaja en rapipago cobrando facturas.",
+      "Esta ahorrando para irse a vivir con su hija a un alquiler en CABA."
+    ],
+    "demographicData": [
+      {
+        "name": "Edad",
+        "value": "34"
+      },
+      {
+        "name": "Área",
+        "value": "Enfermería"
+      },
+      {
+        "name": "Hobbies",
+        "value": "Hacer actividad con sus amigos. Diseño web. Inversiones. Baile. Aprender inglés."
+      }
+    ],
+    "hobbies": {
+      "trademarks": [
+        ["flow.png", "zoom.svg"],
+        ["cai.png", "puma.png"]
+      ],
+      "apps": [
+        ["bbva.png", "spotify.png", "youtube.png", "linkedin.png", "reddit.png"],
+        ["instagram.png", "facebook.png", "tiktok.png", "whatsapp.png", "mercado-libre.png"]
+      ]
+    }
+  },
+  {
+    "fullname": "Luisa Bianchi",
+    "address": "CABA",
+    "img": "/img/users-persona/persona3.png",
+    "personInfo": [
+      {
+        "name": "Estado",
+        "value": "Soltera"
+      },
+      {
+        "name": "Educación",
+        "value": "UBA"
+      }
+    ],
+    "imgDescription": "Diseñadora gráfica independiente en Puerto Madero",
+    "position": "Diseñadora grafica",
+    "motivations": [
+      "Le encantaria poder obtener mas clientes para su estudio grafico a traves de plataformas web",
+      "Salir a navegar en velero con su paerja los fines de semana",
+      "Juntarse los domingos con su familia, especialmente sus hermanos y tias"
+    ],
+    "frustrations": [
+      "Le gustaria poder entender el motivo detras de la complejidad de los terminos y condiciones.",
+      "No ingresa a varios links por miedo a que compartan la informacion de su explorador",
+      "No se siente segura al usar la cuenta del banco por internet"
+    ],
+    "skills": [
+      {
+        "name": "Preocupacion por privacidad en linea",
+        "level": 35
+      }
+    ],
+    "setting": ["Vive con su pareja en un departamento en puerto madero, ambos sin hijos.", "Tiene un estudio gráfico"],
+    "demographicData": [
+      {
+        "name": "Edad",
+        "value": "55"
+      },
+      {
+        "name": "Área",
+        "value": "Tecnologia y computacion"
+      },
+      {
+        "name": "Hobbies",
+        "value": "Navegacion, Gastronomía"
+      }
+    ],
+    "hobbies": {
+      "trademarks": [
+        ["apple.png", "fiat-500.png", "carp.png"],
+        ["yacht.png", "amazon.svg", "netflix.svg"]
+      ],
+      "apps": [
+        ["facebook.png", "instagram.png", "linkedin.png", "pinterest.png"],
+        ["amex.png", "whatsapp.png", "x.png", "garmin.png"]
+      ]
+    }
   }
 ]

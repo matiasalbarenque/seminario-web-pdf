@@ -1,14 +1,16 @@
 export type UserPersona = {
   address: string;
-  demographicData: DemographicData[];
+  demographicData: ListData[];
   frustrations: string[];
   fullname: string;
   img: string;
   imgDescription: string;
   motivations: string[];
+  personInfo: ListData[];
   position: string;
   setting: string[];
   skills: Skill[];
+  hobbies: HobbiesData;
 };
 
 type Skill = {
@@ -16,9 +18,13 @@ type Skill = {
   name: string;
 };
 
-type DemographicData = {
+type ListData = {
   value: string;
   name: string;
+};
+type HobbiesData = {
+  trademarks: string[][];
+  apps: string[][];
 };
 
 export type UserPersonaProps = UserPersona;
