@@ -106,7 +106,7 @@ const CardChartSurvey2 = () => {
 };
 
 const CardChartSurvey3 = () => {
-  const [timeRange, setTimeRange] = useState('90d');
+  const [timeRange] = useState('90d');
 
   const chartData = [
     { date: '2024-04-01', desktop: 222, mobile: 150 },
