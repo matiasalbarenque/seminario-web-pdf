@@ -1,6 +1,7 @@
 import { PageCover } from './pages/PageCover';
 import { PageProblem } from './pages/PageProblem';
 import { PageUserSegmentation } from './pages/PageUserSegmentation';
+import { PageTargetMarket } from './pages/PageTargetMarket';
 import { PageUserPersona1 } from './pages/PageUserPersona1';
 import { PageUserPersona2 } from './pages/PageUserPersona2';
 import { PageUserPersona3 } from './pages/PageUserPersona3';
@@ -12,6 +13,7 @@ export default function App() {
       <PageCover />
       <PageProblem />
       <PageUserSegmentation />
+      <PageTargetMarket />
       <PageUserPersona1 />
       <PageUserPersona2 />
       <PageUserPersona3 />

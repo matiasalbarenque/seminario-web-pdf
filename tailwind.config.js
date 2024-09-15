@@ -70,12 +70,19 @@ export default {
         'squada-one': ['Squada One'],
       },
       keyframes: {
+        ping3s: {
+          '75%, 100%': {
+            transform: 'scale(2)',
+            opacity: 0,
+          },
+        },
         spin5s: {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(360deg)' },
         },
       },
       animation: {
+        ping3s: 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
         spin5s: 'spin5s 5s linear infinite',
       },
     },

@@ -50,8 +50,11 @@ export const UserPersona = (props: UserPersonaProps) => {
       <div className="flex-[3] flex flex-col gap-4 bg-primary">
         <div className="flex flex-col justify-center items-center flex-1">
           <div className="px-3 flex justify-center">
-            <div className="w-52 h-52 rounded-full overflow-hidden bg-white shadow-xl">
-              <img src={img} alt={fullname} className="w-full h-full object-cover" />
+            <div className="w-52 h-52 flex justify-center items-center">
+              <div className="absolute w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-primary-800 animate-ping3s opacity-20 print:hidden" />
+              <div className="rounded-full overflow-hidden shadow-xl">
+                <img src={img} alt={fullname} className="w-full h-full object-cover" />
+              </div>
             </div>
             <div className="p-7 bg-black rounded-3xl overflow-hidden bg-opacity-30 backdrop-blur-sm absolute -bottom-10 text-xs text-white font-medium leading-tight text-center">
               <span className="absolute left-2 top-2 text-6xl">{'″'}</span>

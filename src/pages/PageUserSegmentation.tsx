@@ -6,7 +6,7 @@ import psychographic1 from '@/assets/img/user-segmentation/psychographic/psychog
 import behavior1 from '@/assets/img/user-segmentation/behavior/behavior-1.svg';
 import geographic1 from '@/assets/img/user-segmentation/geographic/geographic-1.svg';
 
-const DemographicSegmentation = () => (
+const Demographic = () => (
   <div className="flex items-center gap-6">
     <div className="p-10 w-60 h-60 flex justify-center items-center bg-white rounded-full shadow">
       <div className="absolute w-full h-full rounded-full border-l-2 border-primary-400 animate-spin5s" />
@@ -43,7 +43,7 @@ const DemographicSegmentation = () => (
   </div>
 );
 
-const PsychographicSegmentation = () => (
+const Psychographic = () => (
   <div className="flex flex-row-reverse items-center gap-6">
     <div className="p-14 w-60 h-60 flex justify-center items-center bg-white rounded-full shadow">
       <div className="absolute w-full h-full rounded-full border-l-2 border-primary-400 animate-spin5s" />
@@ -79,7 +79,7 @@ const PsychographicSegmentation = () => (
   </div>
 );
 
-const BehaviorSegmentation = () => (
+const Behavior = () => (
   <div className="flex items-center gap-6">
     <div className="p-12 w-60 h-60 flex justify-center items-center bg-white rounded-full shadow">
       <div className="absolute w-full h-full rounded-full border-l-2 border-primary-400 animate-spin5s" />
@@ -118,7 +118,7 @@ const BehaviorSegmentation = () => (
   </div>
 );
 
-const GeographicSegmentation = () => (
+const Geographic = () => (
   <div className="flex flex-row-reverse items-center gap-6">
     <div className="p-12 w-60 h-60 flex justify-center items-center bg-white rounded-full shadow">
       <div className="absolute w-full h-full rounded-full border-l-2 border-primary-400 animate-spin5s" />
@@ -156,11 +156,11 @@ export const PageUserSegmentation = () => {
       <div className="w-full mb-8 text-center">
         <PageTitle text="Segmentación de Usuarios" />
       </div>
-      <div className="flex flex-col gap-6">
-        <DemographicSegmentation />
-        <PsychographicSegmentation />
-        <BehaviorSegmentation />
-        <GeographicSegmentation />
+      <div className="flex flex-col gap-10">
+        <Demographic />
+        <Psychographic />
+        <Behavior />
+        <Geographic />
       </div>
     </Page>
   );
