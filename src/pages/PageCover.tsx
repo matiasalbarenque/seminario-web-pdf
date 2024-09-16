@@ -56,11 +56,11 @@ const CardIntro = () => {
         <Separator className="my-6" />
         <div className="mb-4 text-sm text-muted-foreground">Alumnos</div>
         <div className="flex flex-col gap-4">
-          <CardAvatar fullname="Nombre Apellido 1" img="/img/avatars/01.png" studentId="123456" />
-          <CardAvatar fullname="Nombre Apellido 2" img="/img/avatars/02.png" studentId="123456" />
-          <CardAvatar fullname="Nombre Apellido 3" img="/img/avatars/03.png" studentId="123456" />
-          <CardAvatar fullname="Nombre Apellido 4" img="/img/avatars/04.png" studentId="123456" />
-          <CardAvatar fullname="Nombre Apellido 5" img="/img/avatars/05.png" studentId="123456" />
+          <CardAvatar fullname="Albarenque Matías" img="/img/avatars/04.png" studentId="1137027" />
+          <CardAvatar fullname="Chobadindegui Eduardo" img="/img/avatars/02.png" studentId="--" />
+          <CardAvatar fullname="Fuensalida Mathias" img="/img/avatars/04.png" studentId="--" />
+          <CardAvatar fullname="Rodríguez Roxana" img="/img/avatars/05.png" studentId="--" />
+          <CardAvatar fullname="Sajama Hugo" img="/img/avatars/02.png" studentId="--" />
         </div>
       </CardContent>
     </Card>
