@@ -15,50 +15,37 @@ import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
 
 const CardChartSurvey1 = () => {
   const chartConfig = {
-    desktop: {
-      label: 'Desktop',
-      color: '#2563eb',
-    },
-    mobile: {
-      label: 'Mobile',
-      color: '#60a5fa',
+    age: {
+      label: 'Rango etario',
+      color: '#FFD535',
     },
   } satisfies ChartConfig;
 
   const chartData = [
-    { month: 'January', desktop: 186, mobile: 80 },
-    { month: 'February', desktop: 305, mobile: 200 },
-    { month: 'March', desktop: 237, mobile: 120 },
-    { month: 'April', desktop: 73, mobile: 190 },
-    { month: 'May', desktop: 209, mobile: 130 },
-    { month: 'June', desktop: 214, mobile: 140 },
+    { month: '< 25', age: 186 },
+    { month: '25 a 35', age: 305 },
+    { month: '36 a 45', age: 237 },
+    { month: '> 45', age: 73 },
   ];
   return (
     <Card className="w-full">
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>Rango etario</CardTitle>
+        <CardDescription>Preocupación por la seguridad en línea</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[200px] w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              tickMargin={10}
-              axisLine={false}
-              tickFormatter={value => value.slice(0, 3)}
-            />
+            <XAxis dataKey="month" tickLine={false} tickMargin={10} axisLine={false} />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-            <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+            <Bar dataKey="age" fill="var(--color-age)" radius={4} />
           </BarChart>
         </ChartContainer>
       </CardContent>
       <CardFooter>
-        <p>Card Footer</p>
+        <p>TODO: Resumen de porqué la gente del rango etario tiene más preocupación...</p>
       </CardFooter>
     </Card>
   );
@@ -68,11 +55,11 @@ const CardChartSurvey2 = () => {
   const chartConfig = {
     desktop: {
       label: 'Desktop',
-      color: '#2563eb',
+      color: '#FFD535',
     },
     mobile: {
       label: 'Mobile',
-      color: '#60a5fa',
+      color: '#06b5d0',
     },
   } satisfies ChartConfig;
 

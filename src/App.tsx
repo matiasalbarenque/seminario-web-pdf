@@ -6,6 +6,8 @@ import { PageUserPersona1 } from './pages/PageUserPersona1';
 import { PageUserPersona2 } from './pages/PageUserPersona2';
 import { PageUserPersona3 } from './pages/PageUserPersona3';
 import { PageSurveys } from './pages/PageSurveys';
+import { PageNarrative } from './pages/PageNarrative';
+import { PrioritizationGrid } from './pages/PagePrioritizationGrid';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
       <PageUserPersona2 />
       <PageUserPersona3 />
       <PageSurveys />
+      <PageNarrative />
+      <PrioritizationGrid />
     </div>
   );
 }

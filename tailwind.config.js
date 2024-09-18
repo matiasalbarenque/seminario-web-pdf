@@ -68,6 +68,7 @@ export default {
       },
       fontFamily: {
         'squada-one': ['Squada One'],
+        'open-sans': ['Open Sans'],
       },
       keyframes: {
         ping3s: {
