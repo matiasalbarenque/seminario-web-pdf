@@ -57,7 +57,7 @@ const CardIntro = () => {
         <div className="mb-4 text-sm text-muted-foreground">Alumnos</div>
         <div className="flex flex-col gap-4">
           <CardAvatar fullname="Albarenque Matías" img="/img/avatars/04.png" studentId="1137027" />
-          <CardAvatar fullname="Chobadindegui Eduardo" img="/img/avatars/02.png" studentId="--" />
+          <CardAvatar fullname="Chobadindegui Eduardo" img="/img/avatars/02.png" studentId="1133498" />
           <CardAvatar fullname="Fuensalida Mathias" img="/img/avatars/04.png" studentId="--" />
           <CardAvatar fullname="Rodríguez Roxana" img="/img/avatars/05.png" studentId="--" />
           <CardAvatar fullname="Sajama Hugo" img="/img/avatars/02.png" studentId="--" />
