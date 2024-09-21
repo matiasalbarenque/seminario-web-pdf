@@ -16,10 +16,10 @@ export default function App() {
       <PageProblem />
       <PageUserSegmentation />
       <PageTargetMarket />
+      <PageSurveys />
       <PageUserPersona1 />
       <PageUserPersona2 />
       <PageUserPersona3 />
-      <PageSurveys />
       <PageNarrative />
       <PrioritizationGrid />
     </div>
