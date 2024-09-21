@@ -16,16 +16,17 @@ import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
 const CardChartSurvey1 = () => {
   const chartConfig = {
     age: {
-      label: 'Rango etario',
+      label: 'Valor',
       color: '#FFD535',
     },
   } satisfies ChartConfig;
 
   const chartData = [
-    { month: '< 25', age: 186 },
-    { month: '25 a 35', age: 305 },
-    { month: '36 a 45', age: 237 },
-    { month: '> 45', age: 73 },
+    { range: '< 25', age: 67.5, votos: 72},
+    { range: '25 a 35', age: 71.64, votos: 146 },
+    { range: '36 a 45', age: 72.68, votos: 41 },
+    { range: '> 45', age: 72.65, votos: 49 },
+    { range: '100%', age: 100, votos: 307 }
   ];
   return (
     <Card className="w-full">
@@ -37,7 +38,7 @@ const CardChartSurvey1 = () => {
         <ChartContainer config={chartConfig} className="h-[200px] w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
-            <XAxis dataKey="month" tickLine={false} tickMargin={10} axisLine={false} />
+            <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
             <Bar dataKey="age" fill="var(--color-age)" radius={4} />
@@ -45,7 +46,7 @@ const CardChartSurvey1 = () => {
         </ChartContainer>
       </CardContent>
       <CardFooter>
-        <p>TODO: Resumen de porqué la gente del rango etario tiene más preocupación...</p>
+        <p>Toda la población presenta una preocupación de aproximadamente 7 en una escala del 1 al 10. </p>
       </CardFooter>
     </Card>
   );
