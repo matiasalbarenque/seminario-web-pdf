@@ -11,7 +11,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
-import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
+import {Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis, Pie, PieChart} from 'recharts';
 
 const CardChartSurvey1 = () => {
   const chartConfig = {
@@ -46,7 +46,7 @@ const CardChartSurvey1 = () => {
         </ChartContainer>
       </CardContent>
       <CardFooter>
-        <p>Toda la población presenta una preocupación de aproximadamente 7 en una escala del 1 al 10. </p>
+        <p>Toda la población presenta un promedio de preocupación por su privacidad de aproximadamente 7, en una escala del 1 al 10. </p>
       </CardFooter>
     </Card>
   );
@@ -90,6 +90,171 @@ const CardChartSurvey2 = () => {
         <p>Card Footer</p>
       </CardFooter>
     </Card>
+  );
+};
+
+const CardChartSurvey4 = () => {
+  const chartData = [
+    { browser: "chrome", vulnerados: 69.8, fill: "var(--color-chrome)" },
+    { browser: "safari", vulnerados: 30.2, fill: "var(--color-safari)" },
+  ]
+
+  const chartConfig = {
+    vulnerados: {
+      label: "vulnerados",
+    },
+    chrome: {
+      label: "Si",
+      color: "hsl(var(--chart-1))",
+    },
+    safari: {
+      label: "No",
+      color: "hsl(var(--chart-2))",
+    },
+  } satisfies ChartConfig
+  return (
+      <Card className="flex flex-col">
+        <CardHeader className="items-center pb-0">
+          <CardTitle>Fuga de datos</CardTitle>
+          <CardDescription>Confirmaciones</CardDescription>
+        </CardHeader>
+        <CardContent className="flex-1 pb-0">
+          <ChartContainer
+              config={chartConfig}
+              className="mx-auto aspect-square max-h-[250px]"
+          >
+            <PieChart>
+              <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel />}
+              />
+              <Pie data={chartData} dataKey="vulnerados" nameKey="browser" />
+            </PieChart>
+          </ChartContainer>
+        </CardContent>
+        <CardFooter className="flex-col gap-2 text-sm">
+          <div className="flex items-center gap-2 font-medium leading-none">
+            ~70% de la población* confirmaron que sus datos habian sido vulnerados
+          </div>
+          <div className="leading-none text-muted-foreground">
+            *Que sospechaban una posible fuga de datos.
+          </div>
+        </CardFooter>
+      </Card>
+  );
+};
+
+const CardChartSurvey5 = () => {
+  const chartData = [
+    { browser: "chrome", vulnerados: 55.4, fill: "var(--color-chrome)" },
+    { browser: "safari", vulnerados: 40.7, fill: "var(--color-safari)" },
+    { browser: "edge", vulnerados: 3.9, fill: "var(--color-edge)" },
+  ]
+
+  const chartConfig = {
+    vulnerados: {
+      label: "vulnerados",
+    },
+    chrome: {
+      label: "Nunca",
+      color: "hsl(var(--chart-1))",
+    },
+    safari: {
+      label: "A veces",
+      color: "hsl(var(--chart-2))",
+    },
+    edge: {
+      label: "Siempre",
+      color: "hsl(var(--chart-3))",
+    },
+  } satisfies ChartConfig
+  return (
+      <Card className="flex flex-col">
+        <CardHeader className="items-center pb-0">
+          <CardTitle>Frecuencia de lectura</CardTitle>
+          <CardDescription></CardDescription>
+        </CardHeader>
+        <CardContent className="flex-1 pb-0">
+          <ChartContainer
+              config={chartConfig}
+              className="mx-auto aspect-square max-h-[250px]"
+          >
+            <PieChart>
+              <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel />}
+              />
+              <Pie data={chartData} dataKey="vulnerados" nameKey="browser" />
+            </PieChart>
+          </ChartContainer>
+        </CardContent>
+        <CardFooter className="flex-col gap-2 text-sm">
+          <div className="flex items-center gap-2 font-medium leading-none">
+            Más de la mitad de la población nunca lee los Términos y Condiciones
+          </div>
+          <div className="leading-none text-muted-foreground">
+            Solo un ~4% de la población los lee siempre.
+          </div>
+        </CardFooter>
+      </Card>
+  );
+};
+
+const CardChartSurvey6 = () => {
+  const chartData = [
+    { respuesta: "Son demasiado largos", porcentaje: 78.2, fill: "var(--color-chrome)" },
+    { respuesta: "Confío en la empresa, no me importa", porcentaje: 12.4, fill: "var(--color-safari)" },
+    { respuesta: "Te resulta difícil de comprender", porcentaje: 6.5, fill: "var(--color-edge)" },
+    { respuesta: "Otros", porcentaje: 2.9, fill: "var(--color-otros)" },
+  ]
+
+  const chartConfig = {
+    chrome: {
+      label: "Si",
+      color: "hsl(var(--chart-1))",
+    },
+    safari: {
+      label: "No",
+      color: "hsl(var(--chart-2))",
+    },
+    edge: {
+      label: "No",
+      color: "hsl(var(--chart-3))",
+    },
+    otros: {
+      label: "No",
+      color: "hsl(var(--chart-6))",
+    },
+  } satisfies ChartConfig
+  return (
+      <Card className="flex flex-col">
+        <CardHeader className="items-center pb-0">
+          <CardTitle>¿Por qué no se leen?</CardTitle>
+          <CardDescription></CardDescription>
+        </CardHeader>
+        <CardContent className="flex-1 pb-0">
+          <ChartContainer
+              config={chartConfig}
+              className="mx-auto aspect-square max-h-[250px]"
+          >
+            <PieChart>
+              <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel />}
+              />
+              <Pie data={chartData} dataKey="porcentaje" nameKey="respuesta" />
+            </PieChart>
+          </ChartContainer>
+        </CardContent>
+        <CardFooter className="flex-col gap-2 text-sm">
+          <div className="flex items-center gap-2 font-medium leading-none">
+            ~78% de la población* no los lee porque son demasiado largos.
+          </div>
+          <div className="leading-none text-muted-foreground">
+            *que nunca lee los Téminos y Condiciones.
+          </div>
+        </CardFooter>
+      </Card>
   );
 };
 
@@ -284,14 +449,19 @@ export const PageSurveys = () => {
       <div className="w-full mb-6 text-center">
         <PageTitle text="Encuestas" />
         <div className="p-4 bg-white rounded-2xl shadow text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, praesentium. Iure earum ipsum neque
-          quia, iste excepturi similique natus atque fugiat quis culpa eos, deserunt alias eaque beatae, dolores ad!
+          El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población.
+          Algo importante para destacar es que si bien mas del 70% reflejó una preocupación importante por su privacidad en linea, solo el 4% se toma el tiempo de leer los Términos y Condiciones.
+          Esto es una gran contradicción ya que uno tiene que leer que responsabilidad esta asumiendo, que información esta compartiendo y cuales son los riesgos y/o consecuencias.
         </div>
       </div>
       <div className="flex flex-col gap-6">
         <div className="flex gap-6">
           <CardChartSurvey1 />
-          <CardChartSurvey2 />
+          <CardChartSurvey4 />
+        </div>
+        <div className="flex gap-6">
+          <CardChartSurvey5 />
+          <CardChartSurvey6 />
         </div>
         <CardChartSurvey3 />
       </div>
