@@ -21,20 +21,20 @@ const Demographic = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Edad</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Adultos jóvenes y personas de mediana edad (25-45 años), que son los que suelen estar más activos en la
             creación de cuentas en diferentes sitios web.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Ocupación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Profesionales de oficina, estudiantes universitarios, trabajadores remotos.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Nivel de ingresos</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Medio a alto, con acceso frecuente a servicios en línea que requieren la creación de cuentas.
           </div>
         </div>
@@ -58,18 +58,20 @@ const Psychographic = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Estilo de vida</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Personas conscientes de la privacidad digital y preocupadas por el manejo de su información personal en
             línea.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Intereses</h4>
-          <div className="text-xs text-gray-500">Tecnología, ciberseguridad, herramientas de gestión digital.</div>
+          <div className="text-sm font-open-sans text-gray-500">
+            Tecnología, ciberseguridad, herramientas de gestión digital.
+          </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Valores</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Alto valor por la seguridad y privacidad personal, buscan soluciones prácticas que les ahorren tiempo y les
             protejan del spam y estafas.
           </div>
@@ -94,21 +96,21 @@ const Behavior = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Frecuencia de uso</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Usuarios frecuentes de servicios en línea que requieren registro, como redes sociales, comercio electrónico,
             y plataformas de streaming.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Lealtad</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Personas que ya utilizan algún tipo de herramienta para proteger su información en línea y están abiertas a
             nuevas soluciones más efectivas.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Uso de tecnología</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Usuarios que utilizan múltiples dispositivos y prefieren herramientas que les ofrezcan simplicidad y
             seguridad en la gestión de cuentas.
           </div>
@@ -133,14 +135,14 @@ const Geographic = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Ubicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Principalmente en áreas urbanas y suburbanas donde el acceso a internet es más robusto y la adopción de
             tecnología es alta.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Países</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Principalmente en países desarrollados o en vías de desarrollo con alta penetración de internet y uso de
             servicios en línea.
           </div>

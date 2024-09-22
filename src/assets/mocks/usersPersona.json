@@ -26,13 +26,14 @@
     ],
     "skills": [
       {
-        "name": "Preocupacion por privacidad en linea",
+        "name": "Preocupacion por privacidad en línea",
         "level": 85
       }
     ],
     "setting": [
-      "Está por registrarse en una nueva plataforma de inversión, pero al leer los T&C, detecta que requieren una cámara para la verificación facial, lo cual lo incomoda y prefiere no continuar con el proceso. (CAMBIAR)",
-      "Busca alternativas que protejan mejor su información, como plataformas con autenticación de dos factores o mayor transparencia sobre la privacidad de datos. (CAMBIAR)"
+      "Busca alternativas que protejan mejor su información, como plataformas con autenticación de dos factores o mayor transparencia sobre la privacidad de datos.",
+      "Actualmente se encuentra viviendo en la casa de sus padres y se encuentra trabajando en Accenture a la vez que ahorra para mudarse solo.",
+      "Le gusta jugar al tenis y participar de Podcasts de Crypto-inversores."
     ],
     "demographicData": [
       {
@@ -66,7 +67,7 @@
     "personInfo": [
       {
         "name": "Estado",
-        "value": "Soltero"
+        "value": "Soltera"
       },
       {
         "name": "Educación",
@@ -76,9 +77,9 @@
     "imgDescription": "Estudiante de Enfermería viviendo en La Plata, Buenos Aires.",
     "position": "Estudiante de Enfermería",
     "motivations": [
-      "Graduarse lo más pronto posible sin importale el promedio.",
+      "Graduarse lo más pronto posible sin importarle el promedio.",
       "Conseguir un trabajo bien remunerado",
-      "Alquilar en CABA para estar mas cerca de su facultad."
+      "Alquilar en CABA para estar más cerca de su trabajo."
     ],
     "frustrations": [
       "Encuentra que muchos sitios no explican de manera clara cómo protegerán su información.",
@@ -86,12 +87,12 @@
     ],
     "skills": [
       {
-        "name": "Preocupacion por privacidad en linea",
+        "name": "Preocupacion por privacidad en línea",
         "level": 75
       }
     ],
     "setting": [
-      "Se encuentra cursando el penultimo año de su carrera.",
+      "Se encuentra cursando el penúltimo año de su carrera.",
       "Trabaja en rapipago cobrando facturas.",
       "Esta ahorrando para irse a vivir con su hija a un alquiler en CABA."
     ],
@@ -137,13 +138,13 @@
     "imgDescription": "Diseñadora gráfica independiente en Puerto Madero",
     "position": "Diseñadora grafica",
     "motivations": [
-      "Le encantaria poder obtener mas clientes para su estudio grafico a traves de plataformas web",
-      "Salir a navegar en velero con su paerja los fines de semana",
-      "Juntarse los domingos con su familia, especialmente sus hermanos y tias"
+      "Le encantaría poder obtener más clientes para su estudio grafico a través de plataformas web",
+      "Salir a navegar en velero con su pareja los fines de semana",
+      "Juntarse los domingos con su familia, especialmente sus hermanos y tías"
     ],
     "frustrations": [
-      "Le gustaria poder entender el motivo detras de la complejidad de los terminos y condiciones.",
-      "No ingresa a varios links por miedo a que compartan la informacion de su explorador",
+      "Le gustaría poder entender el motivo detrás de la complejidad de los Términos y Condiciones.",
+      "No ingresa a varios links por miedo a que compartan la información de su explorador",
       "No se siente segura al usar la cuenta del banco por internet"
     ],
     "skills": [

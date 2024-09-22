@@ -2,7 +2,7 @@ import { Page } from '@/components/Page';
 import { PageTitle } from '@/components/PageTitle';
 import prioritizationGrid from '@/assets/img/prioritization-grid/prioritization-grid.svg';
 
-export const PrioritizationGrid = () => {
+export const PagePrioritizationGrid = () => {
   return (
     <Page>
       <div className="w-full mb-6 text-center">

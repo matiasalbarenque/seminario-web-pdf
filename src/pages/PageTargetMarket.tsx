@@ -24,7 +24,7 @@ const MassMarket = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Podría no ser el más adecuado ya que el problema de privacidad es específico y no afecta a todos los
             usuarios de la misma manera.
           </div>
@@ -49,7 +49,7 @@ const NicheMarket = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Este es un mercado más enfocado donde podrías apuntar a usuarios altamente preocupados por la privacidad y
             dispuestos a adoptar herramientas especializadas.
           </div>
@@ -77,7 +77,7 @@ const SegmentedMarket = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Podrías dirigirte a varios segmentos que comparten preocupaciones similares sobre la privacidad pero con
             ligeras diferencias en cómo gestionan su información.
           </div>
@@ -102,7 +102,7 @@ const DiversifiedMarket = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Menos adecuado para esta problemática, a menos que se amplíe la oferta a otros aspectos de la gestión de
             identidad digital.
           </div>
@@ -127,7 +127,7 @@ const MultilateralMarket = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Podría ser relevante si se consideran diferentes tipos de usuarios que interactúan en la plataforma, como
             proveedores de servicios y usuarios finales.
           </div>
@@ -149,13 +149,13 @@ const Conclusion = () => (
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <div className="flex flex-col gap-3">
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             El mercado target más adecuado sería un mercado de nicho o segmentado que incluye usuarios preocupados por
             la privacidad digital, especialmente aquellos que valoran la seguridad y simplicidad en la gestión de su
             información personal en línea. En cuanto a la segmentación psicográfica y de comportamiento serán claves
             para identificar a estos usuarios.
           </div>
-          <div className="text-xs text-gray-500">
+          <div className="text-sm font-open-sans text-gray-500">
             Con esta segmentación y definición de mercado target, nos enfocaremos mejor en las estrategias de marketing
             y desarrollo de producto que cumpla con las expectativas de los usuarios tratados.
           </div>
