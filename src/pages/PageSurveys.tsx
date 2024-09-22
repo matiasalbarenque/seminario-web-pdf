@@ -41,7 +41,7 @@ const CardChartSurvey1 = () => {
             <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
-            <Bar dataKey="age" fill="var(--color-age)" radius={4} />
+            <Bar dataKey="age" fill="var(--color-age)" radius={4} label={{ position: 'top' }} />
           </BarChart>
         </ChartContainer>
       </CardContent>
@@ -131,7 +131,7 @@ const CardChartSurvey4 = () => {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          ~70% de la población* confirmaron que sus datos habian sido vulnerados
+          ~70% de la población* confirmaron que sus datos habían sido vulnerados
         </div>
         <div className="leading-none text-muted-foreground">*Que sospechaban una posible fuga de datos.</div>
       </CardFooter>
