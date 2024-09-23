@@ -20,19 +20,13 @@ export const PageInterviews = () => {
               <div className="text-md font-open-sans text-gray-500">
                 <p>
                   “La importancia es que el usuario empiece a entender que hay que proteger nuestros datos y que la info. A este tipo de empresas es plata y se lo estamos dando gratuito, y además que con nuestra info pueden hacer muchísimas cosas, privacidad, suplantación de identidad, cometer algún tipo de delito.”
-                 <br/>
-                  <br/>"No son nada cómodas para el usuario"
                 </p>
               </div>
             </div>
           </CardContent>
         </Card>
         <Card className="flex-1">
-          <CardHeader className="pb-4">
-            <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
-              gtrfhsrgtf arthraehh
-            </h3>
-          </CardHeader>
+
           <CardContent className="flex flex-col gap-2">
             <div className="flex flex-col gap-3">
               <div className="text-md font-open-sans text-gray-500">
@@ -57,61 +51,47 @@ export const PageInterviews = () => {
                   Finalmente, es importante recordar que cualquier información que se comparta en línea puede ser
                   difícil de eliminar por completo, lo que implica riesgos que pueden repercutir en la vida real.
                 </p>
+
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="flex-1">
+          <CardHeader className="pb-4">
+            <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
+              Edgardo Rodriguez - Jefe de Infraestructura en una compañia de dialisis.
+            </h3>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
+              <div className="text-md font-open-sans text-gray-500">
+                <b>Servicios en línea utilizados:</b>
+                <p>El entrevistado usa servicios en línea frecuentemente para acceder a soporte técnico, crear cuentas para servidores, virtualización, web hosting y DNS. Menciona que está constantemente creando cuentas para diferentes servicios.
+                </p>
+                <b>Lectura de Términos y Condiciones (TyC)
+                </b>
+                <p>
+                Generalmente no los lee, salvo cuando una plataforma le genera desconfianza. En esos casos, hace un rápido análisis de los títulos antes de profundizar.
+                </p>
+                <b>Inseguridad en línea</b>
+                <p>Le preocupa la vulnerabilidad de contraseñas, como alertas de Google Passwords Vault sobre filtraciones. Cambia sus contraseñas regularmente para mantener su seguridad.</p>
+
+                <b>Encuesta, ¿Que le pareció?</b>
+                <p>Al entrevistado le pareció sencilla y completa. Valora la simplicidad para evitar el abandono por complejidad.
+                </p>
+                <b>Evolución de la Sociedad y la Privacidad:</b>
+                <p>En los últimos años, Edgardo percibe que la sociedad está saturada de información, lo que puede derivar en desinformación. Las empresas hacen TyC más complejos para protegerse, lo cual hace más difícil entender las consecuencias de aceptarlos.
+                </p>
+                <b>Medidas de protección</b>
+                <p>El entrevistado utiliza contraseñas complejas, las almacena en un gestor cifrado y no las comparte. Clasifica sus cuentas según la seriedad de la empresa que las aloja. Considera usar correos virtuales y contraseñas únicas por cuenta como medidas adicionales para mejorar su seguridad.
+                </p>
+
               </div>
             </div>
           </CardContent>
         </Card>
       </div>
-      {/* <div className="mx-6 my-10 flex flex-col gap-10 flex-1 z-10">
-        <div className="flex flex-1 gap-10">
-          <div className="p-8 pl-16 w-full bg-white rounded-xl shadow">
-            <div className="absolute -left-4 -top-6 p-4 bg-white rounded-full shadow z-10">
-              <div className="w-10 h-10 flex justify-center items-center">
-                <span className="text-2xl font-semibold">55%</span>
-              </div>
-            </div>
-            <p className="mb-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique natus dolore, quis aspernatur alias
-              consequuntur nam tempore minima accusamus enim quo hic sit consequatur. Sequi atque aut ratione
-              praesentium! Nesciunt!
-              <br />
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique natus dolore, quis aspernatur alias
-              consequuntur nam tempore minima accusamus enim quo hic sit consequatur. Sequi atque aut ratione
-              praesentium! Nesciunt!
-            </p>
-          </div>
-          <div className="p-8 pl-16 w-full bg-white rounded-xl shadow">
-            <div className="absolute -left-4 -top-6 p-4 bg-white rounded-full shadow z-10">
-              <div className="w-10 h-10 flex justify-center items-center">
-                <span className="text-2xl font-semibold">67%</span>
-              </div>
-            </div>
-            <p className="mb-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique natus dolore, quis aspernatur alias
-              consequuntur nam tempore minima accusamus enim quo hic sit consequatur. Sequi atque aut ratione
-              praesentium! Nesciunt!
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-1 gap-10">
-          <div className="p-6 pl-16 w-full bg-white rounded-xl shadow">
-            <div className="absolute -left-4 -top-6 p-4 bg-white rounded-full shadow z-10">
-              <div className="w-10 h-10 flex justify-center items-center">
-                <span className="text-2xl font-semibold">10%</span>
-              </div>
-            </div>
-            <p className="mb-0">rgerfg</p>
-          </div>
-          <div className="p-6 pl-16 w-full bg-white rounded-xl shadow">
-            <div className="absolute -left-4 -top-6 p-4 bg-white rounded-full shadow z-10">
-              <div className="w-10 h-10 flex justify-center items-center">
-                <span className="text-2xl font-semibold">10%</span>
-              </div>
-            </div>
-            <p className="mb-0">rgerfg</p>
-          </div>
-        </div>
-      </div> */}
+
     </Page>
   );
 };
