@@ -18,32 +18,11 @@ export const PageInterviews = () => {
           <CardContent className="flex flex-col gap-2">
             <div className="flex flex-col gap-3">
               <div className="text-md font-open-sans text-gray-500">
-                <b>¿Quién sos, que estudiaste?</b>
-
-                <p>“Soy Julieta Zanazzi, soy abogada y soy magister en derecho de la ciberseguridad y entorno digital, especializada en cibercrimen. Actualmente estoy trabajando en la dirección de asistencia judicial en delitos complejos y crímenes organizados en la corte suprema de justicia y, específicamente en el área de las telecomunicaciones, entre ellos, redes y comunicaciones electrónicas en general.”
-                </p>
-                <b>¿Por qué te parece importante que los usuarios le presten atención a los tycs?
-                </b>
                 <p>
                   “La importancia es que el usuario empiece a entender que hay que proteger nuestros datos y que la info. A este tipo de empresas es plata y se lo estamos dando gratuito, y además que con nuestra info pueden hacer muchísimas cosas, privacidad, suplantación de identidad, cometer algún tipo de delito.”
+                 <br/>
                   <br/>"No son nada cómodas para el usuario"
-                  <br/>"Hay que tener lo mínimo para tu comercio y no más"
-                  <br/>"Hay que saber la empresa que está detrás"
-                  <br/>"Me gusta como Europa maneja las cookies"
-                  <br/>"Todo lo que metemos en internet no se borra"
-                  <br/>"Puede tener riesgos en la vida real"
                 </p>
-
-                <b>¿Qué notas en la sociedad con respecto a este problema en los últimos 5-10 años?</b>
-                <p>“La gente empezó a ser más consciente de que hay que proteger nuestra información.”
-                  <br/>“Pero falta un montón todavía igual. Algo es algo.”
-                  <br/>“¿Cuánta gente metió el ojito por 50 lucas?”</p>
-
-                <b>¿Decis que el estado está ausente(World Coin)?</b>
-                <p>“tiene que haber una materia que hable de esto”
-                  “los pibes no tienen conciencia de los riesgos”
-                </p>
-
               </div>
             </div>
           </CardContent>
@@ -57,9 +36,27 @@ export const PageInterviews = () => {
           <CardContent className="flex flex-col gap-2">
             <div className="flex flex-col gap-3">
               <div className="text-md font-open-sans text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptatum commodi veniam, quas magni
-                nemo reprehenderit quasi, facilis nobis omnis at qui saepe minima eos iusto impedit repellat, corporis
-                voluptas.
+                <p>
+                  Según las entrevistas, los términos y condiciones a menudo resultan incómodos para el usuario,
+                  ya que su redacción técnica y extensa puede dificultar su comprensión. Se considera fundamental,
+                  en el desarrollo de nuestra sociedad, que los comercios establezcan políticas claras y concisas,
+                  limitándose a lo esencial y evitando complicaciones innecesarias. Además, es crucial conocer a
+                  la empresa detrás de cada plataforma, asegurando que actúe con transparencia y responsabilidad.
+                </p>
+                <p>
+                  Destacamos un tema de gran importancia: el Estado argentino tiene una responsabilidad considerable
+                  en estas cuestiones y no está interviniendo como debería. Es necesario que haya una intervención
+                  en casos como el de Worldcoin, para proteger a la población. Otro punto muy importante son los
+                  menores, quienes no son conscientes de los riesgos que pueden asumir al aceptar términos y condiciones.
+                </p>
+                <p>
+                  También es relevante valorar cómo Europa gestiona las cookies, ya que prioriza la privacidad del
+                  usuario y promueve una mayor claridad sobre el uso de datos.
+                </p>
+                <p>
+                  Finalmente, es importante recordar que cualquier información que se comparta en línea puede ser
+                  difícil de eliminar por completo, lo que implica riesgos que pueden repercutir en la vida real.
+                </p>
               </div>
             </div>
           </CardContent>
