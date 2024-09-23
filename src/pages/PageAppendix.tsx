@@ -71,6 +71,19 @@ export const PageAppendix = () => {
                   Entrevista Edgardo Rodríguez
                 </a>
               </div>
+              <div className="flex gap-2">
+                <div className="flex items-center">
+                  <img src="/img/icons/external-link.svg" alt="external-link" className="w-4 h-4" />
+                </div>
+                <a
+                  href="https://www.canva.com/design/DAGRf6FrrGE/eKzU4roCgKuBuohSSd4Mng/edit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-md text-primary-700"
+                >
+                  Resumen: Entrevista Edgardo Rodríguez
+                </a>
+              </div>
             </div>
           </CardContent>
         </Card>

@@ -28,7 +28,8 @@ export const PageNarrative = () => {
         </div>
         <div className="font-open-sans text-xl font-medium text-slate-800 leading-[1.75]">
           <p>
-            Es por eso que nuestro equipo ha creado “EasyTerms”, una extensión compatible con la mayoría de navegadores,
+            Es por eso que nuestro equipo ha creado “EasyTerms”, una{' '}
+            <span className="bg-primary-300 p-1 rounded-2xl">extensión</span> compatible con la mayoría de navegadores,
             donde su principal foco es concientizar a los usuarios de los peligros que implica aceptar dichos términos.
             Ya sea transformando ese texto largo y complicado en algo más legible o advirtiendo sobre peligros
             previamente reportados por otros usuarios.
@@ -36,7 +37,8 @@ export const PageNarrative = () => {
           <p>
             El usuario de nuestra extensión podrá personalizar completamente su experiencia indicando sobre qué tópicos
             le interesaría ser informado y además podrá acceder a una versión paga donde podrá desplegar un chat donde
-            podrá hacer sus consultas específicas a una IA entrenada.
+            podrá hacer sus consultas específicas a una <span className="bg-primary-300 p-1 rounded-2xl">IA</span>{' '}
+            entrenada.
           </p>
         </div>
       </div>
