@@ -40,6 +40,43 @@ export const PageAppendix = () => {
         <Card className="flex-1">
           <CardHeader className="pb-4">
             <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
+              Entrevistas realizadas
+            </h3>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
+              <div className="flex gap-2">
+                <div className="flex items-center">
+                  <img src="/img/icons/external-link.svg" alt="external-link" className="w-4 h-4" />
+                </div>
+                <a
+                  href="https://docs.google.com/document/d/1vnMg9OTLl2MD2qgN5Q4KcQlhOwJqbdxbqEG2tgN32LM/edit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-md text-primary-700"
+                >
+                  Entrevista Julieta Zanazzi
+                </a>
+              </div>
+              <div className="flex gap-2">
+                <div className="flex items-center">
+                  <img src="/img/icons/external-link.svg" alt="external-link" className="w-4 h-4" />
+                </div>
+                <a
+                  href="https://docs.google.com/document/d/1AH6BBMWl_nNNm0tgtwnRY5OeqD0Sly8cuPOcULGJIAk/edit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-md text-primary-700"
+                >
+                  Entrevista Edgardo Rodríguez
+                </a>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="flex-1">
+          <CardHeader className="pb-4">
+            <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
               Agencia Española de protección de datos
             </h3>
           </CardHeader>
