@@ -11,7 +11,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
-import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis, Pie, PieChart } from 'recharts';
+import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis, Pie, PieChart, LabelList } from 'recharts';
 
 const CardChartSurvey1 = () => {
   const chartConfig = {
@@ -96,21 +96,39 @@ const CardChartSurvey2 = () => {
   );
 };
 
+const GenericPieChart = ({
+  config,
+  chartData,
+}: {
+  config: ChartConfig;
+  chartData: { respuesta: string; porcentaje: number; fill: string }[];
+}) => {
+  return (
+    <ChartContainer config={config} className="mx-auto aspect-square max-h-[275px]">
+      <PieChart>
+        <Pie data={chartData} dataKey="porcentaje" label nameKey="respuesta" />
+        <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel nameKey="respuesta" />} />
+        <ChartLegend
+          content={<ChartLegendContent nameKey="respuesta" />}
+          className="flex-wrap gap-1 [&>*]:basis-1/4 [&>*]:justify-center flex-col"
+        />
+      </PieChart>
+    </ChartContainer>
+  );
+};
+
 const CardChartSurvey4 = () => {
   const chartData = [
-    { browser: 'chrome', vulnerados: 69.8, fill: 'var(--color-chrome)' },
-    { browser: 'safari', vulnerados: 30.2, fill: 'var(--color-safari)' },
+    { respuesta: 'si', porcentaje: 69.8, fill: 'var(--color-si)' },
+    { respuesta: 'no', porcentaje: 30.2, fill: 'var(--color-no' },
   ];
 
   const chartConfig = {
-    vulnerados: {
-      label: 'vulnerados',
-    },
-    chrome: {
+    si: {
       label: 'Si',
       color: 'hsl(var(--chart-1))',
     },
-    safari: {
+    no: {
       label: 'No',
       color: 'hsl(var(--chart-2))',
     },
@@ -122,12 +140,7 @@ const CardChartSurvey4 = () => {
         <CardDescription>Confirmaciones</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
-        <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
-          <PieChart>
-            <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="vulnerados" nameKey="browser" />
-          </PieChart>
-        </ChartContainer>
+        <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
@@ -141,24 +154,21 @@ const CardChartSurvey4 = () => {
 
 const CardChartSurvey5 = () => {
   const chartData = [
-    { browser: 'chrome', vulnerados: 55.4, fill: 'var(--color-chrome)' },
-    { browser: 'safari', vulnerados: 40.7, fill: 'var(--color-safari)' },
-    { browser: 'edge', vulnerados: 3.9, fill: 'var(--color-edge)' },
+    { respuesta: 'nunca', porcentaje: 55.4, fill: 'var(--color-nunca)' },
+    { respuesta: 'aVeces', porcentaje: 40.7, fill: 'var(--color-aVeces)' },
+    { respuesta: 'siempre', porcentaje: 3.9, fill: 'var(--color-siempre)' },
   ];
 
   const chartConfig = {
-    vulnerados: {
-      label: 'vulnerados',
-    },
-    chrome: {
+    nunca: {
       label: 'Nunca',
       color: 'hsl(var(--chart-1))',
     },
-    safari: {
+    aVeces: {
       label: 'A veces',
       color: 'hsl(var(--chart-2))',
     },
-    edge: {
+    siempre: {
       label: 'Siempre',
       color: 'hsl(var(--chart-3))',
     },
@@ -170,12 +180,7 @@ const CardChartSurvey5 = () => {
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
-        <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
-          <PieChart>
-            <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="vulnerados" nameKey="browser" />
-          </PieChart>
-        </ChartContainer>
+        <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
@@ -189,28 +194,28 @@ const CardChartSurvey5 = () => {
 
 const CardChartSurvey6 = () => {
   const chartData = [
-    { respuesta: 'Son demasiado largos', porcentaje: 78.2, fill: 'var(--color-chrome)' },
-    { respuesta: 'Confío en la empresa, no me importa', porcentaje: 12.4, fill: 'var(--color-safari)' },
-    { respuesta: 'Te resulta difícil de comprender', porcentaje: 6.5, fill: 'var(--color-edge)' },
-    { respuesta: 'Otros', porcentaje: 2.9, fill: 'var(--color-otros)' },
+    { respuesta: 'demasiadoLargo', porcentaje: 78.2, fill: 'var(--color-demasiadoLargo)' },
+    { respuesta: 'confioEnLaEmpresa', porcentaje: 12.4, fill: 'var(--color-confioEnLaEmpresa)' },
+    { respuesta: 'dificilDeComprender', porcentaje: 6.5, fill: 'var(--color-dificilDeComprender)' },
+    { respuesta: 'otros', porcentaje: 2.9, fill: 'var(--color-otros)' },
   ];
 
   const chartConfig = {
-    chrome: {
-      label: 'Si',
+    demasiadoLargo: {
+      label: 'Son demasiado largos',
       color: 'hsl(var(--chart-1))',
     },
-    safari: {
-      label: 'No',
+    confioEnLaEmpresa: {
+      label: 'Confío en la empresa, no me importa',
       color: 'hsl(var(--chart-2))',
     },
-    edge: {
-      label: 'No',
+    dificilDeComprender: {
+      label: 'Te resulta difícil de comprender',
       color: 'hsl(var(--chart-3))',
     },
     otros: {
-      label: 'No',
-      color: 'hsl(var(--chart-6))',
+      label: 'Otros',
+      color: 'hsl(var(--chart-5))',
     },
   } satisfies ChartConfig;
   return (
@@ -220,12 +225,7 @@ const CardChartSurvey6 = () => {
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
-        <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
-          <PieChart>
-            <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="porcentaje" nameKey="respuesta" />
-          </PieChart>
-        </ChartContainer>
+        <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
