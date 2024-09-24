@@ -9,7 +9,7 @@ export const PageCurrentScenario1 = () => {
         <PageTitle text="Escenario Actual" />
       </div>
       <div>
-        <img src={persona1} className="w-full z-10 drop-shadow" />
+        <img src={persona1} className="w-full z-10" />
       </div>
     </Page>
   );

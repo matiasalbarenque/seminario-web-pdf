@@ -5,7 +5,7 @@ export const PageCurrentScenario2 = () => {
   return (
     <Page>
       <div className="mt-8">
-        <img src={persona2} className="w-full z-10 drop-shadow" />
+        <img src={persona2} className="w-full z-10" />
       </div>
     </Page>
   );

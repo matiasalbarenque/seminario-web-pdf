@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Page } from '@/components/Page';
 import { PageTitle } from '@/components/PageTitle';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +10,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
-import { Bar, BarChart, Area, AreaChart, CartesianGrid, XAxis, Pie, PieChart, LabelList } from 'recharts';
+import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from 'recharts';
 
 const CardChartSurvey1 = () => {
   const chartConfig = {
@@ -45,52 +44,9 @@ const CardChartSurvey1 = () => {
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
-        <p>
-          Toda la población presenta un promedio de preocupación por su privacidad de aproximadamente 7, en una escala
-          del 1 al 10.{' '}
-        </p>
-      </CardFooter>
-    </Card>
-  );
-};
-
-const CardChartSurvey2 = () => {
-  const chartConfig = {
-    desktop: {
-      label: 'Desktop',
-      color: '#FFD535',
-    },
-    mobile: {
-      label: 'Mobile',
-      color: '#06b5d0',
-    },
-  } satisfies ChartConfig;
-
-  const chartData = [
-    { month: 'January', desktop: 186, mobile: 80 },
-    { month: 'February', desktop: 305, mobile: 200 },
-    { month: 'March', desktop: 237, mobile: 120 },
-    { month: 'April', desktop: 73, mobile: 190 },
-    { month: 'May', desktop: 209, mobile: 130 },
-    { month: 'June', desktop: 214, mobile: 140 },
-  ];
-  return (
-    <Card className="w-full">
-      <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig} className="min-h-[100px] w-full">
-          <BarChart accessibilityLayer data={chartData}>
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-            <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
-          </BarChart>
-        </ChartContainer>
-      </CardContent>
-      <CardFooter>
-        <p>Card Footer</p>
+      <CardFooter className="text-sm text-slate-700 text-center">
+        Toda la población presenta un promedio de preocupación por su privacidad de aproximadamente 7, en una escala del
+        1 al 10.{' '}
       </CardFooter>
     </Card>
   );
@@ -110,7 +66,7 @@ const GenericPieChart = ({
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel nameKey="respuesta" />} />
         <ChartLegend
           content={<ChartLegendContent nameKey="respuesta" />}
-          className="flex-wrap gap-1 [&>*]:basis-1/4 [&>*]:justify-center flex-col"
+          className="flex-wrap gap-1 [&>*]:basis-1/4 [&>*]:justify-center flex-col py-2"
         />
       </PieChart>
     </ChartContainer>
@@ -142,10 +98,8 @@ const CardChartSurvey4 = () => {
       <CardContent className="flex-1 pb-0">
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          ~70% de la población* confirmaron que sus datos habían sido vulnerados
-        </div>
+      <CardFooter className="flex-col gap-1 text-xs text-center">
+        <div>~70% de la población* confirmaron que sus datos habían sido vulnerados</div>
         <div className="leading-none text-muted-foreground">*Que sospechaban una posible fuga de datos.</div>
       </CardFooter>
     </Card>
@@ -174,7 +128,7 @@ const CardChartSurvey5 = () => {
     },
   } satisfies ChartConfig;
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col flex-1">
       <CardHeader className="items-center pb-0">
         <CardTitle>Frecuencia de lectura</CardTitle>
         <CardDescription></CardDescription>
@@ -182,10 +136,8 @@ const CardChartSurvey5 = () => {
       <CardContent className="flex-1 pb-0">
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Más de la mitad de la población nunca lee los Términos y Condiciones
-        </div>
+      <CardFooter className="flex-col gap-1 text-xs text-center">
+        <div>Más de la mitad de la población nunca lee los Términos y Condiciones</div>
         <div className="leading-none text-muted-foreground">Solo un ~4% de la población los lee siempre.</div>
       </CardFooter>
     </Card>
@@ -219,7 +171,7 @@ const CardChartSurvey6 = () => {
     },
   } satisfies ChartConfig;
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col flex-1">
       <CardHeader className="items-center pb-0">
         <CardTitle>¿Por qué no se leen?</CardTitle>
         <CardDescription></CardDescription>
@@ -227,10 +179,8 @@ const CardChartSurvey6 = () => {
       <CardContent className="flex-1 pb-0">
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          ~78% de la población* no los lee porque son demasiado largos.
-        </div>
+      <CardFooter className="flex-col gap-1 text-xs text-center">
+        <div>~78% de la población* no los lee porque son demasiado largos.</div>
         <div className="leading-none text-muted-foreground">*que nunca lee los Téminos y Condiciones.</div>
       </CardFooter>
     </Card>
@@ -240,22 +190,22 @@ const CardChartSurvey6 = () => {
 export const PageSurveys = () => {
   return (
     <Page>
-      <div className="w-full mb-6 text-center">
+      <div className="w-full mb-8 text-center">
         <PageTitle text="Encuestas" />
-        <div className="p-4 bg-white rounded-2xl shadow text-gray-600">
-          El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población. Algo
-          importante para destacar es que si bien mas del 70% reflejó una preocupación importante por su privacidad en
-          linea, solo el 4% se toma el tiempo de leer los Términos y Condiciones. Esto es una gran contradicción ya que
-          uno tiene que leer que responsabilidad esta asumiendo, que información esta compartiendo y cuales son los
-          riesgos y/o consecuencias.
-        </div>
       </div>
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-6">
+      <div className="mb-8 p-5 bg-white rounded-2xl shadow text-sm text-slate-700 leading-relaxed">
+        El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población. Algo
+        importante para destacar es que si bien mas del 70% reflejó una preocupación importante por su privacidad en
+        linea, solo el 4% se toma el tiempo de leer los Términos y Condiciones. Esto es una gran contradicción ya que
+        uno tiene que leer que responsabilidad esta asumiendo, que información esta compartiendo y cuales son los
+        riesgos y/o consecuencias.
+      </div>
+      <div className="flex flex-col gap-8">
+        <div className="flex gap-8">
           <CardChartSurvey1 />
           <CardChartSurvey4 />
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <CardChartSurvey5 />
           <CardChartSurvey6 />
         </div>

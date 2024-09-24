@@ -21,9 +21,9 @@ export const PageProblem = () => {
         <div className="my-6 w-72 h-[2px] bg-primary-600" />
       </div>
 
-      <p className="text-xl font-medium font-open-sans leading-relaxed text-slate-800">
-        Normalmente los usuarios de servicios digitales tienen que proporcionar información personal y aceptar términos
-        y condiciones que son dificiles de comprender para la gente común, por ende suelen aceptartse sin ser leídos.
+      <p className="text-xl font-medium font-open-sans leading-relaxed text-slate-800 tracking-wide text-justify">
+        Normalmente los usuarios de servicios digitales tienen que proporcionar información personal y aceptar Términos
+        y Condiciones que son difíciles de comprender para la gente común, por ende, suelen aceptarse sin ser leídos.
         Esto conlleva un riesgo muy grande con respecto a la protección de los datos entre otras implicancias legales.
       </p>
 

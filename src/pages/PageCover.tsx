@@ -73,8 +73,12 @@ export const PageCover = () => {
   return (
     <Page>
       <img src={uadeLogo} className="absolute w-48 h-auto top-6 right-6" />
-      <div className="flex flex-col flex-1 justify-center items-center gap-4">
-        <img src="/img/logo.jpeg" alt="Logo" className="h-72 w-auto rounded-full overflow-hidden shadow" />
+      <div className="flex flex-col flex-1 justify-center items-center gap-3">
+        <img
+          src="/img/logo.png"
+          alt="Logo"
+          className="h-72 w-auto p-6 rounded-full overflow-hidden border border-gray-100 shadow"
+        />
         <div className="flex flex-col justify-center gap-10">
           <h1 className="text-8xl font-semibold leading-snug bg-gradient-to-b from-primary-400 via-primary-500 to-primary-700 text-transparent bg-clip-text">
             EasyTerms
