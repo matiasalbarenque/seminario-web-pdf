@@ -4,7 +4,7 @@ import { UserPersona } from '@/components/UserPersona';
 import usersPersona from '@/assets/mocks/usersPersona.json';
 import empathyMapPersona1 from '@/assets/img/users-persona/persona1.svg';
 
-export const PageUserPersona1 = () => {
+export const Page09UserPersona = () => {
   return (
     <Page>
       <div className="w-full text-center">

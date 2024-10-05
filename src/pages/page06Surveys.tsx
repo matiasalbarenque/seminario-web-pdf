@@ -10,34 +10,34 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
-import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart } from 'recharts';
+import { Bar, BarChart, CartesianGrid, XAxis, Pie, PieChart, YAxis } from 'recharts';
 
 const CardChartSurvey1 = () => {
   const chartConfig = {
     age: {
-      label: 'Valor',
+      label: 'Puntaje',
       color: '#FFD535',
     },
   } satisfies ChartConfig;
 
   const chartData = [
-    { range: '< 25', age: 67.5, votos: 72 },
-    { range: '25 a 35', age: 71.64, votos: 146 },
-    { range: '36 a 45', age: 72.68, votos: 41 },
-    { range: '> 45', age: 72.65, votos: 49 },
-    { range: '100%', age: 100, votos: 307 },
+    { range: '< 25', age: 6.75, votos: 72 },
+    { range: '25 a 35', age: 7.164, votos: 146 },
+    { range: '36 a 45', age: 7.268, votos: 41 },
+    { range: '> 45', age: 7.265, votos: 49 }
   ];
   return (
     <Card className="w-full">
       <CardHeader>
         <CardTitle>Rango etario</CardTitle>
-        <CardDescription>Preocupación por la seguridad en línea</CardDescription>
+        <CardDescription>Preocupación por la privacidad de la información personal</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[200px] w-full">
           <BarChart accessibilityLayer data={chartData}>
-            <CartesianGrid vertical={false} />
-            <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} />
+            <CartesianGrid vertical={false}/>
+            <YAxis type="number" domain={[0, 10]}/>
+            <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} domain={[0,10]} />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
             <Bar dataKey="age" fill="var(--color-age)" radius={4} label={{ position: 'top' }} />
@@ -99,8 +99,7 @@ const CardChartSurvey4 = () => {
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-1 text-xs text-center">
-        <div>~70% de la población* confirmaron que sus datos habían sido vulnerados</div>
-        <div className="leading-none text-muted-foreground">*Que sospechaban una posible fuga de datos.</div>
+        <div>El ~70% de la población que verificó con una herramienta pudo confirmar que sus datos habían sido vulnerados</div>
       </CardFooter>
     </Card>
   );
@@ -180,25 +179,27 @@ const CardChartSurvey6 = () => {
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-1 text-xs text-center">
-        <div>~78% de la población* no los lee porque son demasiado largos.</div>
-        <div className="leading-none text-muted-foreground">*que nunca lee los Téminos y Condiciones.</div>
+        <div>De los 55,4% que nunca lee los T&C,</div><div>el 78.2% indicó que son demasiado largos.</div>
+        <div className="leading-none text-muted-foreground">Un 12.4% confía ciegamente en la empresa.</div>
       </CardFooter>
     </Card>
   );
 };
 
-export const PageSurveys = () => {
+export const Page06Surveys = () => {
   return (
     <Page>
       <div className="w-full mb-8 text-center">
         <PageTitle text="Encuestas" />
       </div>
-      <div className="mb-8 p-5 bg-white rounded-2xl shadow text-sm text-slate-700 leading-relaxed">
-        El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población. Algo
-        importante para destacar es que si bien mas del 70% reflejó una preocupación importante por su privacidad en
-        linea, solo el 4% se toma el tiempo de leer los Términos y Condiciones. Esto es una gran contradicción ya que
-        uno tiene que leer que responsabilidad esta asumiendo, que información esta compartiendo y cuales son los
-        riesgos y/o consecuencias.
+      <div className="mb-8 p-5 bg-white rounded-2xl shadow">
+        <p className="pStandard">
+          Logramos recolectar un total de <b>322</b> respuestas a nuestra encuesta. En nuestra población encuestada
+          predominan
+          las persona entre <b>25 y 35 años</b> (49.4%) seguido de menores de 25 años (22.7%). El rubro mas popular fue
+          <b> Tecnología y Computación</b> (51.6%) seguido de 'Otros' (25.5%). Finalmente contamos con un 72% de <b>Trabajadores
+          activos</b> seguido de un 20.8% de Estudiantes. El servicio en linea mas utilizado es <b>Redes sociales</b> (83.2.%) seguido de correo electrónico (46%)
+        </p>
       </div>
       <div className="flex flex-col gap-8">
         <div className="flex gap-8">

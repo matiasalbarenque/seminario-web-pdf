@@ -1,7 +1,7 @@
 import { Page } from '@/components/Page';
 import persona2 from '@/assets/img/current-scenario/persona2.svg';
 
-export const PageCurrentScenario2 = () => {
+export const Page13CurrentScenario = () => {
   return (
     <Page>
       <div className="mt-8">

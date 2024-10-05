@@ -152,7 +152,7 @@ const Geographic = () => (
   </div>
 );
 
-export const PageUserSegmentation = () => {
+export const Page04UserSegmentation = () => {
   return (
     <Page>
       <div className="w-full mb-8 text-center">

@@ -3,7 +3,7 @@ import { UserPersona } from '@/components/UserPersona';
 import usersPersona from '@/assets/mocks/usersPersona.json';
 import empathyMapPersona3 from '@/assets/img/users-persona/persona3.svg';
 
-export const PageUserPersona3 = () => {
+export const Page11UserPersona = () => {
   return (
     <Page>
       <UserPersona {...usersPersona[2]} />

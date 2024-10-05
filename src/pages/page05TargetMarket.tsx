@@ -165,7 +165,7 @@ const Conclusion = () => (
   </div>
 );
 
-export const PageTargetMarket = () => {
+export const Page05TargetMarket = () => {
   return (
     <Page>
       <div className="w-full mb-8 text-center">
