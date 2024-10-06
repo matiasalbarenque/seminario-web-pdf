@@ -1,5 +1,6 @@
 import { Page } from '@/components/Page';
 import { PageTitle } from '@/components/PageTitle';
+import exposureMeter from '@/assets/img/narrative/exposure-meter.svg';
 
 export const Page15Narrative = () => {
   return (
@@ -52,7 +53,7 @@ export const Page15Narrative = () => {
         mas probable que tu perfil salga con la letra ‘<span className="cE">E</span>’.
       </p>
 
-      <p className="pStandard"></p>
+      <img src={exposureMeter} className="mt-10 h-28 z-10" />
     </Page>
   );
 };
