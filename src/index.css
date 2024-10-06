@@ -17,27 +17,32 @@ a {
 }
 
 b {
-    color: #6cfd00;
+    color: #FCC800;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .cA {
-    color: #FCC800;
+    color: #198653;
+    font-weight: bolder;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .cB {
-     color: #FCC800;
+     color: #78b651;
+    font-weight: bolder;
      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .cC {
-    color: #FCC800;
+    color: #fdbf07;
+    font-weight: bolder;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .cD {
-     color: #FCC800;
+     color: #d46e2c;
+    font-weight: bolder;
      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
  }
 .cE {
-    color: #FCC800;
+    color: #da3544;
+    font-weight: bolder;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 

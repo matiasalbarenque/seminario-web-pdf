@@ -16,6 +16,7 @@ import { PagePrioritizationGrid } from './pages/PagePrioritizationGrid';
 import { PageUserStoryMap } from './pages/PageUserStoryMap';
 import { PageAppendix } from './pages/PageAppendix';
 import { Page03Problem } from '@/pages/page03Problem.tsx';
+import { Page16Narrative } from '@/pages/page16Narrative.tsx';
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
       <Page13CurrentScenario />
       <Page14CurrentScenario />
       <Page15Narrative />
+      <Page16Narrative />
       <PagePrioritizationGrid />
       <PageUserStoryMap />
       <PageAppendix />
