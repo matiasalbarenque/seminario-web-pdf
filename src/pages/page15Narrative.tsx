@@ -6,7 +6,7 @@ export const Page15Narrative = () => {
   return (
     <Page>
       <div className="w-full mb-8 text-center">
-        <PageTitle text="Problema" />
+        <PageTitle text="Narrativa" />
       </div>
       <div className="text-center">
         <h3 className="text-5xl font-light font-open-sans leading-tight uppercase">
@@ -49,8 +49,8 @@ export const Page15Narrative = () => {
         Con esta información va a brindarnos a través de un análisis un retrato de nuestra identidad digital, recalcando
         el grado de exposición en la que cada uno se encuentra. Por ejemplo, los grados serían{' '}
         <span className="cA">A</span>,<span className="cB">B</span>,<span className="cC">C</span>,
-        <span className="cD">D</span>,<span className="cE">E</span>, y si usas algún servicio de Meta, lo
-        mas probable que tu perfil salga con la letra ‘<span className="cE">E</span>’.
+        <span className="cD">D</span>,<span className="cE">E</span>, y si usas algún servicio de Meta, lo mas probable
+        que tu perfil salga con la letra ‘<span className="cE">E</span>’.
       </p>
 
       <img src={exposureMeter} className="mt-10 h-28 z-10" />
