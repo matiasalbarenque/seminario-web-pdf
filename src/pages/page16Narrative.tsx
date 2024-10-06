@@ -9,8 +9,8 @@ export const Page16Narrative = () => {
         <a href="https://tosdr.org/" target="_blank">
           Terms of Service, Didn't Read
         </a>{' '}
-        o{' '}
-        <a href="https://tosdr.org/" target="_blank">
+        y{' '}
+        <a href="https://haveibeenpwned.com/" target="_blank">
           Have i been pwned
         </a>
         . Con esta información se lograra hacer tres análisis, uno general del usuario, ponderando el grado de

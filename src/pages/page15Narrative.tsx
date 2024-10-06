@@ -10,7 +10,7 @@ export const Page15Narrative = () => {
       </div>
       <div className="text-center">
         <h3 className="text-5xl font-light font-open-sans leading-tight uppercase">
-          La ignorancia contractual como el reflejo de la inexistencia del temor
+          El temor como antídoto a la ignorancia contractual
         </h3>
       </div>
       <div className="w-full flex justify-center">
