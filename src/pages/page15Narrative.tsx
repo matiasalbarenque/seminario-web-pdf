@@ -48,8 +48,8 @@ export const Page15Narrative = () => {
       <p className="pStandard">
         Con esta información va a brindarnos a través de un análisis un retrato de nuestra identidad digital, recalcando
         el grado de exposición en la que cada uno se encuentra. Por ejemplo, los grados serían{' '}
-        <span className="cA">A</span>(nada expuesto),<span className="cB">B</span>,<span className="cC">C</span>,
-        <span className="cD">D</span>,<span className="cE">E</span> (Muy expuesto), y si usas algún servicio de Meta, lo
+        <span className="cA">A</span>,<span className="cB">B</span>,<span className="cC">C</span>,
+        <span className="cD">D</span>,<span className="cE">E</span>, y si usas algún servicio de Meta, lo
         mas probable que tu perfil salga con la letra ‘<span className="cE">E</span>’.
       </p>
 

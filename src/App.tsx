@@ -12,9 +12,9 @@ import { Page12CurrentScenario } from './pages/page12CurrentScenario.tsx';
 import { Page13CurrentScenario } from './pages/page13CurrentScenario.tsx';
 import { Page14CurrentScenario } from './pages/page14CurrentScenario.tsx';
 import { Page15Narrative } from './pages/page15Narrative.tsx';
-import { PagePrioritizationGrid } from './pages/PagePrioritizationGrid';
-import { PageUserStoryMap } from './pages/PageUserStoryMap';
-import { PageAppendix } from './pages/PageAppendix';
+import { Page17PrioritizationGrid } from './pages/page17PrioritizationGrid.tsx';
+import { Page18UserStoryMap } from './pages/page18UserStoryMap.tsx';
+import { Page19Appendix } from './pages/page19Appendix.tsx';
 import { Page03Problem } from '@/pages/page03Problem.tsx';
 import { Page16Narrative } from '@/pages/page16Narrative.tsx';
 
@@ -37,9 +37,9 @@ export default function App() {
       <Page14CurrentScenario />
       <Page15Narrative />
       <Page16Narrative />
-      <PagePrioritizationGrid />
-      <PageUserStoryMap />
-      <PageAppendix />
+      <Page17PrioritizationGrid />
+      <Page18UserStoryMap />
+      <Page19Appendix />
     </div>
   );
 }

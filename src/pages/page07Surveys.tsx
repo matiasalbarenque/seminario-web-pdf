@@ -152,10 +152,11 @@ export const Page07Surveys = () => {
       </div>
       <div className="mb-8 p-5 bg-white rounded-2xl shadow">
         <p className="pStandard">
-          El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población.{' '}
-          <b>175</b> (54.3%) Encuestados demostrarón un interés en que este más clara la política de privacidad y
-          manejos de datos personales.
+          El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población.
         </p>
+        <p className="pStandard">Creemos que es importante que {' '}
+          <b>175</b> (54.3%) encuestados demostrarón un interés en que este más clara la política de privacidad y
+          manejos de datos personales y hay que tomarlo en cuenta en el desarollo del MVP.</p>
         <p className="pStandard">
           Estamos sorprendidos en lo parejo que resultó ser la precupación por la privacidad respecto a la edad.
           Esperabamos que los jóvenes sean mas concientes de los riesgos que toman ya que están mas actualizados con las
@@ -172,7 +173,7 @@ export const Page07Surveys = () => {
         </p>
         <p className="pStandard">
           Otra peculiaridad es que un <b>12.4%</b> acepta por el hecho de confiar en la empresa que se esta
-          registrando. Es una decisión bastante cuestionable como vimos con lo que paso con Disney [8] y Uber [11]
+          registrando. Es una decisión bastante cuestionable como vimos con lo que paso con Disney [8] y Uber [11].
         </p>
         <p className="pStandard">
           En retrospectiva, nos hubiera gustado conocer mas datos como género por ejemplo para poder segmentar mejor

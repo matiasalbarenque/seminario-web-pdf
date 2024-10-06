@@ -30,7 +30,7 @@ export const Page16Narrative = () => {
         y precisa al alcance del usuario, pero sin bombardear con información.
       </p>
       <h3 className="mb-4 pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
-        Funeling:
+        Funneling:
       </h3>
       <p className="pStandard">
         En un futuro, el producto tendrá una gran parte enfocada en educación y concientización, pensamos ofrecerle al
