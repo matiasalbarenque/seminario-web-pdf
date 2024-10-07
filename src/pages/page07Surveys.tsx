@@ -162,6 +162,7 @@ export const Page07Surveys = () => {
           Esperabamos que los jóvenes sean mas concientes de los riesgos que toman ya que están mas actualizados con las
           noticias relacionadas con este tema pero al parecer es lo contrario, al parecer con la edad vas generando un
           poco más conciencia sobre las consecuencias.
+          
         </p>
         <p className="pStandard">
           Algo importante para destacar es que si bien mas del <b>70%</b> reflejó una preocupación importante por su

@@ -37,8 +37,8 @@ export const Page16Narrative = () => {
         usuario otros servicios como advertir si una contraseña fue vulnerada y poder actualizarla fácilmente. A su vez,
         esto nos brinda una oportunidad de negocio para concientizar a los usuarios sobre buenas prácticas respecto al
         manejo de contraseñas, ya que estará más motivado a aprender después de un episodio negativo. Y así con muchos
-        otros tópicos (como brindar resúmenes de tycs, reportar sitios o aplicaciones por uso indebido de datos,
-        informar sobre el grado de protección de su información, cursos de concientización de ciberseguridad).
+        otros tópicos (como brindar resúmenes de términos y condiciones, reportar sitios o aplicaciones por uso indebido de datos,
+        informar sobre el grado de protección de su información, cursos de concientización de ciberseguridad, etc.).
       </p>
       <p className="pStandard">
         Otro punto a destacar es que en algún momento será inevitable necesitar más información de la que nos provee el

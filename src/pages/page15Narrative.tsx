@@ -20,14 +20,14 @@ export const Page15Narrative = () => {
         Tomando en cuenta todos los puntos analizados (problemática, entrevistas y encuestas) el usuario que no lee los
         términos y condiciones <b>nunca</b> [4] los va a leer aunque estén resumidos o no. No importa una solución que
         facilite este paso ya que al usuario no le atrae en absoluto lo que hay detrás de tildar la casilla al
-        registrarse. Sea por ignorancia, confianza, desinformación, etc. la sociedad ignora este paso y va directo a
-        utilizar la aplicación, desconociendo sus consecuencias.
+        registrarse. Sea por <i>ignorancia, confianza, desinformación</i>, etc. la sociedad ignora este paso y va
+        directo a utilizar la aplicación, desconociendo sus consecuencias.
       </p>
       <p className="pStandard">
         Nunca va a existir un resumen que sea suficientemente atractivo para el usuario, no se pueden resumir los
         términos y condiciones en una página, y nunca vamos a lograr enseñarles a toda una población a cómo leerlos,
-        pero lo que podemos lograr es ‘‘cambiar y transformar’’ esa ignorancia en preocupación, la confianza en
-        desconfianza y atacar esa desinformación con concientización.
+        pero lo que podemos lograr es ‘‘cambiar y transformar’’ esa <i>ignorancia</i>  en <i>preocupación</i> , la
+        <i> confianza</i> en <i>desconfianza</i> y atacar esa <i>desinformación</i>  con <i>concientización</i> .
       </p>
       <p className="pStandard">
         Necesitamos que la gente sea consciente de lo que está aceptando, y sea capaz de verlo con sus propios ojos en
