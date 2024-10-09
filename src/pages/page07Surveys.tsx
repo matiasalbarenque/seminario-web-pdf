@@ -148,21 +148,20 @@ export const Page07Surveys = () => {
         <div className="my-6 w-72 h-[2px] bg-primary-600" />
       </div>
       <div className="w-full mb-4 text-center">
-        <PageTitle text="Conclusiones" />
+        <CardHeader className="pb-4">
+          <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
+             Resultados arrojados por la encuesta
+          </h3>
+        </CardHeader>
       </div>
       <div className="mb-8 p-5 bg-white rounded-2xl shadow">
         <p className="pStandard">
-          El resultado de la encuesta fue positivo y demostró que nuestro problema se ve reflejado en la población.
+          El resultado fue positivo y demostró que hay una preocupación reflejada en la población.
         </p>
-        <p className="pStandard">Creemos que es importante que {' '}
-          <b>175</b> (54.3%) encuestados demostrarón un interés en que este más clara la política de privacidad y
-          manejos de datos personales y hay que tomarlo en cuenta en el desarollo del MVP.</p>
         <p className="pStandard">
-          Estamos sorprendidos en lo parejo que resultó ser la precupación por la privacidad respecto a la edad.
-          Esperabamos que los jóvenes sean mas concientes de los riesgos que toman ya que están mas actualizados con las
-          noticias relacionadas con este tema pero al parecer es lo contrario, al parecer con la edad vas generando un
-          poco más conciencia sobre las consecuencias.
-          
+          Un resultado sorprendente fue lo parejo que resultó ser la precupación por la privacidad respecto a la edad.
+          Se esperaba que los jóvenes entre 25 y 35 sean mas concientes de los riesgos que toman ya que están mas actualizados con las
+          noticias relacionadas con este tema pero al parecer es lo contrario y la edad es un factor importante para evaluar la conciencia sobre las consecuencias de los contratos.
         </p>
         <p className="pStandard">
           Algo importante para destacar es que si bien mas del <b>70%</b> reflejó una preocupación importante por su
@@ -172,9 +171,12 @@ export const Page07Surveys = () => {
           ya que uno tiene que leer que responsabilidad esta asumiendo, que información esta compartiendo y cuales son
           los riesgos y/o consecuencias.
         </p>
+        <p className="pStandard">Otro dato para destacar fueron los{' '}
+          <b>175</b> (54.3%) encuestados que demostrarón un interés en que esté más clara la política de privacidad y
+          manejos de datos personales.</p>
         <p className="pStandard">
-          Otra peculiaridad es que un <b>12.4%</b> acepta por el hecho de confiar en la empresa que se esta
-          registrando. Es una decisión bastante cuestionable como vimos con lo que paso con Disney [8] y Uber [11].
+          Una peculiaridad es que un <b>12.4%</b> acepta por el hecho de confiar en la empresa que se esta
+          registrando. Es una decisión muy cuestionable como se vió en el desarollo del problema lo que pasó con Disney [8] y Uber [11].
         </p>
         <p className="pStandard">
           En retrospectiva, nos hubiera gustado conocer mas datos como género por ejemplo para poder segmentar mejor

@@ -25,8 +25,7 @@ const MassMarket = () => (
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Podría no ser el más adecuado ya que el problema de privacidad es específico y no afecta a todos los
-            usuarios de la misma manera.
+            Nos afecta a todos los usuarios de la misma manera.
           </div>
         </div>
       </CardContent>
@@ -50,8 +49,8 @@ const NicheMarket = () => (
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Este es un mercado más enfocado donde podrías apuntar a usuarios altamente preocupados por la privacidad y
-            dispuestos a adoptar herramientas especializadas.
+            Se podrá apuntar a usuarios preocupados por la privacidad y
+            dispuestos a adoptar herramientas o conocimiento de profesionales especializados.
           </div>
         </div>
       </CardContent>
@@ -78,7 +77,7 @@ const SegmentedMarket = () => (
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Podrías dirigirte a varios segmentos que comparten preocupaciones similares sobre la privacidad pero con
+            Se dirigirá a varios segmentos que comparten preocupaciones similares sobre la privacidad pero con
             ligeras diferencias en cómo gestionan su información.
           </div>
         </div>
@@ -103,8 +102,7 @@ const DiversifiedMarket = () => (
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Menos adecuado para esta problemática, a menos que se amplíe la oferta a otros aspectos de la gestión de
-            identidad digital.
+            La oferta abarca a todos los aspectos en gestión de identidad digital, puntualmente en simplificar la complejidad de los términos y condiciones con el objetivo de concientizar y educar.
           </div>
         </div>
       </CardContent>
@@ -128,8 +126,7 @@ const MultilateralMarket = () => (
         <div>
           <h4 className="text-sm font-semibold">Aplicación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Podría ser relevante si se consideran diferentes tipos de usuarios que interactúan en la plataforma, como
-            proveedores de servicios y usuarios finales.
+            Las bases de datos recopiladas con información del servicio podran brindarse como un servicio en sí (a los Ministerios de Educación y Legislación por ejemplo).
           </div>
         </div>
       </CardContent>
@@ -150,14 +147,12 @@ const Conclusion = () => (
       <CardContent className="flex flex-col gap-2">
         <div className="flex flex-col gap-3">
           <div className="text-sm font-open-sans text-gray-500">
-            El mercado target más adecuado sería un mercado de nicho o segmentado que incluye usuarios preocupados por
-            la privacidad digital, especialmente aquellos que valoran la seguridad y simplicidad en la gestión de su
-            información personal en línea. En cuanto a la segmentación psicográfica y de comportamiento serán claves
-            para identificar a estos usuarios.
+            Ya que apunta a todas las personas que usan un teléfono, el mercado target más adecuado sería un mercado en masa diversificado.
+            Tambien incluye mercados de nicho y segmentados, como usuarios preocupados por la privacidad digital, especialmente aquellos que valoran la seguridad y simplicidad en la gestión de su
+            información personal en línea. En cuanto a la segmentación psicográfica y de comportamiento serán claves para identificar a estos usuarios.
           </div>
           <div className="text-sm font-open-sans text-gray-500">
-            Con esta segmentación y definición de mercado target, nos enfocaremos mejor en las estrategias de marketing
-            y desarrollo de producto que cumpla con las expectativas de los usuarios tratados.
+            Con esta segmentación y definición de mercado target, nos enfocaremos mejor en las estrategias de marketing y desarrollo de producto que cumpla con las expectativas de los usuarios tratados.
           </div>
         </div>
       </CardContent>

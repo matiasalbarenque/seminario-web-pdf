@@ -22,20 +22,19 @@ const Demographic = () => (
         <div>
           <h4 className="text-sm font-semibold">Edad</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Adultos jóvenes y personas de mediana edad (25-45 años), que son los que suelen estar más activos en la
-            creación de cuentas en diferentes sitios web.
+            78% de la población mundial de diez años en adelante. [12]
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Ocupación</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Profesionales de oficina, estudiantes universitarios, trabajadores remotos.
+            Todo aquel que tenga celular. Sea para trabajar o uso personal.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Nivel de ingresos</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Medio a alto, con acceso frecuente a servicios en línea que requieren la creación de cuentas.
+            Bajo a alto. El nivel de entrada para los celulares de gama baja es cada día mas accesible.
           </div>
         </div>
       </CardContent>
@@ -58,22 +57,13 @@ const Psychographic = () => (
       <CardContent className="flex flex-col gap-2">
         <div>
           <h4 className="text-sm font-semibold">Estilo de vida</h4>
-          <div className="text-sm font-open-sans text-gray-500">
-            Personas conscientes de la privacidad digital y preocupadas por el manejo de su información personal en
-            línea.
+          <div className="text-sm font-open-sans text-gray-500">Incluye personas que necesitan conectividad constante, acceso a información, organización, interacciones sociales, dependencia tecnológica, entre otras.
           </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Intereses</h4>
           <div className="text-sm font-open-sans text-gray-500">
-            Tecnología, ciberseguridad, herramientas de gestión digital.
-          </div>
-        </div>
-        <div>
-          <h4 className="text-sm font-semibold">Valores</h4>
-          <div className="text-sm font-open-sans text-gray-500">
-            Alto valor por la seguridad y privacidad personal, buscan soluciones prácticas que les ahorren tiempo y les
-            protejan del spam y estafas.
+            Comunicación social, entretenimiento, herramientas de gestión digital, compras en línea, etc.
           </div>
         </div>
       </CardContent>

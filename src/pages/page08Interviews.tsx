@@ -69,14 +69,14 @@ export const Page08Interviews = () => {
         <Card className="flex-1 z-10">
           <CardHeader className="pb-4">
             <h3 className="pl-3 border-l-2 border-primary-300 text-xl font-semibold leading-none tracking-tight">
-              Conlusiones
+              Resultados arrojados por las entrevistas
             </h3>
           </CardHeader>
           <CardContent className="mt-2">
             <div className="text-md text-slate-700">
               <p>
                 <p>
-                  Según las entrevistas, los términos y condiciones a menudo resultan incómodos para el usuario, ya que
+                  Los términos y condiciones a menudo resultan incómodos para el usuario, ya que
                   su redacción técnica y extensa puede dificultar su comprensión. Se considera fundamental, en el
                   desarrollo de nuestra sociedad, que los comercios establezcan políticas claras y concisas, limitándose
                   a lo esencial y evitando complicaciones innecesarias. Además, es crucial conocer a la empresa detrás

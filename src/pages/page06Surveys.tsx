@@ -194,11 +194,11 @@ export const Page06Surveys = () => {
       </div>
       <div className="mb-8 p-5 bg-white rounded-2xl shadow">
         <p className="pStandard">
-          Logramos recolectar un total de <b>322</b> respuestas a nuestra encuesta. En nuestra población encuestada
+          Se recolectó un total de <b>322</b> respuestas a la encuesta. En la población encuestada
           predominan
-          las persona entre <b>25 y 35 años</b> (49.4%) seguido de menores de 25 años (22.7%). El rubro mas popular fue
-          <b> Tecnología y Computación</b> (51.6%) seguido de 'Otros' (25.5%). Finalmente contamos con un 72% de <b>Trabajadores
-          activos</b> seguido de un 20.8% de Estudiantes. El servicio en linea mas utilizado es <b>Redes sociales</b> (83.2.%) seguido de correo electrónico (46%)
+          las persona entre <b>25 y 35 años</b> (49.4%) seguido de menores de 25 años (22.7%). El rubro más popular fue
+          <b> Tecnología y Computación</b> (51.6%) seguido de 'Otros' (25.5%). El servicio en linea mas utilizado es <b>Redes sociales</b> (83.2.%) seguido de correo electrónico (46%).
+          Finalmente, el 72% son <b>Trabajadores activos</b> seguido de un 20.8% de Estudiantes.
         </p>
       </div>
       <div className="flex flex-col gap-8">

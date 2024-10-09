@@ -15,16 +15,19 @@ export const Page03Problem = () => {
         las normativas [2,3].
       </p>
       <p className="pStandard">
-        Facilmente podrian <b>echarse culpas a las empresas</b> por la longitud excesiva [1,5,7] de estos
-        documentos; el uso de un lenguaje jurídico difícil de entender [1,2] (frecuentemente
-        traducido de otro idioma y/o de otro sistema legal) como también las prácticas poco amigables para el usuario
-        como lo son la tendencia a cambiar y actualizarse tal como se actualizan las propias apps y la complejidad de
+        Facilmente podrian <b>echarse culpas a las empresas</b> por la longitud excesiva de estos
+        documentos, según un estudio realizado en el 2008 por profesionales especializados de la Universidad Carnegie Mellon,
+        si los usuarios de internet leyeran anualmente las políticas de privacidad en línea, palabra por palabra, cada vez
+        que visitan un nuevo sitio, ocuparían entre 181 y 304 horas anuales[7].
+        También las empresas utiizan un lenguaje jurídico que es difícil de entender [1,2,5] y que frecuentemente está
+        traducido de otro idioma y/o de otro sistema legal. Por último utilizan prácticas poco amigables para el usuario
+        como lo son la tendencia a cambiar y actualizarse propias de las apps y la complejidad de
         seguir el hilo a la lectura de las cláusulas [2].
       </p>
       <p className="pStandard">Lejos de subestimar la capacidad de análisis del usuario, es importante destacar la
-        necesidad de <b>tomar conciencia</b> sobre lo mencionado anteriormente. No deberíamos preocuparnos tanto por
-        profundizar en la razonabilidad de los aspectos jurídicos y técnicos de un contrato, sino más bien empezar a
-        darnos cuenta del <b>temor que debería surgir</b> de dicho desconocimiento. La gran mayoría de la población
+        necesidad de <b>tomar conciencia</b> sobre lo mencionado anteriormente. No debería ser un tema de preocupación
+        la razonabilidad de los aspectos jurídicos y técnicos de un contrato, sino más bien empezar a
+        darse cuenta del <b>temor que debería surgir</b> de dicho desconocimiento. La gran mayoría de la población
         desconoce el acuerdo que acepta al registrarse en las aplicaciones de diversas empresas y pasa por alto la
         posibilidad de que al aceptarlas podría comprometer algo que considera valioso.
       </p>

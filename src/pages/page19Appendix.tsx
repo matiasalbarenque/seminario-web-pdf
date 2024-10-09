@@ -101,7 +101,7 @@ export const Page19Appendix = () => {
                     rel="noopener noreferrer"
                     className="text-md font-medium text-gray-800 hover:text-primary-700"
                   >
-                    [7] The Cost of Reading Privacy Policies by Aleecia M. McDonald and Lorrie Faith Cranor ∗
+                    [7] The Cost of Reading Privacy Policies by Aleecia M. McDonald and Lorrie Faith Cranor (pág. 17)
                   </a>
                 </div>
 
@@ -173,6 +173,20 @@ export const Page19Appendix = () => {
                     className="text-md font-medium text-gray-800 hover:text-primary-700"
                   >
                     [11] INFOBAE - Accidente Uber
+                  </a>
+                </div>
+
+                <div className="flex gap-2">
+                  <div className="flex items-center">
+                    <img src="/img/icons/external-link.svg" alt="external-link" className="w-4 h-4" />
+                  </div>
+                  <a
+                      href="https://news.un.org/es/story/2023/12/1526712"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-md font-medium text-gray-800 hover:text-primary-700"
+                  >
+                    [12] UN - Más del 75% de la población mundial tiene un teléfono celular y más del 65% usa el internet
                   </a>
                 </div>
               </div>
