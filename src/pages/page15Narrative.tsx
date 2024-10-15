@@ -26,7 +26,7 @@ export const Page15Narrative = () => {
       <p className="pStandard">
         Un resumen que sea suficientemente atractivo para el usuario es atacar una pequeña porción del problema, no se pueden resumir los
         términos y condiciones en una página o enseñarles a toda una población a cómo leerlos.
-        Si bien es una tarea dificil, el objetivo de la solución será ‘‘cambiar y transformar’’ esa <i>ignorancia</i>  en <i>preocupación</i> , la
+        Si bien es una tarea dificil, el objetivo de la solución será ‘‘cambiar y transformar’’ esa <i>ignorancia</i>  en <i>preocupación</i>, la
         <i> confianza</i> en <i>desconfianza</i> y atacar esa <i>desinformación</i>  con <i>concientización</i> .
       </p>
       <p className="pStandard">
