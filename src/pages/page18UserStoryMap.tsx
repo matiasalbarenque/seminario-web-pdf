@@ -31,7 +31,7 @@ export const Page18UserStoryMap = () => {
                   <img src="/img/icons/external-link.svg" alt="external-link" className="w-4 h-4" />
                 </div>
                 <a
-                  href="https://trello.com/b/kDyiFaCv"
+                  href="https://trello.com/b/zaRDQdXV/antidote-trello"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-md font-medium text-gray-800 hover:text-primary-700"
