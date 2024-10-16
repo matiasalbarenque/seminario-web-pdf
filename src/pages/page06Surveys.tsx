@@ -194,14 +194,16 @@ export const Page06Surveys = () => {
         <PageTitle text="Encuestas" />
       </div>
       <div className="mb-8 p-5 bg-white rounded-2xl shadow">
-        <p className="pStandard">
+        <p className="pStandard mb-4">
           En la población encuestada predominan las personas de entre <b>25 y 35 años</b> con un 49.4%, seguido de
           menores de 25 años con un 22.7%. El rubro que destaco con diferencia, representando a mas de la mitad de los
           encuestados, fue <b> Tecnología y Computación</b>. En cuanto a servicios en línea más utilizados, las{' '}
           <b>Redes sociales</b> lideraron con un 83.2%, seguidas por el correo electrónico con un 46%. Finalmente, el
           72% de los encuestados son <b>Trabajadores activos</b>, seguido de un 20.8% de estudiantes.
         </p>
-        <p>A continuacion se muestran mas datos sobre la encuesta realizada, seguida de una conclusión.</p>
+        <p className="mb-0">
+          A continuacion se muestran mas datos sobre la encuesta realizada, seguida de una conclusión.
+        </p>
       </div>
       <div className="flex flex-col gap-8 z-10">
         <div className="flex gap-8">
