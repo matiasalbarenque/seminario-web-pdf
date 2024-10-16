@@ -24,20 +24,20 @@ const CardChartSurvey1 = () => {
     { range: '< 25', age: 6.75, votos: 72 },
     { range: '25 a 35', age: 7.164, votos: 146 },
     { range: '36 a 45', age: 7.268, votos: 41 },
-    { range: '> 45', age: 7.265, votos: 49 }
+    { range: '> 45', age: 7.265, votos: 49 },
   ];
   return (
-    <Card className="w-full">
+    <Card className="flex flex-col">
       <CardHeader>
         <CardTitle>Rango etario</CardTitle>
         <CardDescription>Preocupación por la privacidad de la información personal</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig} className="h-[200px] w-full">
+      <CardContent className="flex-1 flex justify-center items-center">
+        <ChartContainer config={chartConfig}>
           <BarChart accessibilityLayer data={chartData}>
-            <CartesianGrid vertical={false}/>
-            <YAxis type="number" domain={[0, 10]}/>
-            <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} domain={[0,10]} />
+            <CartesianGrid vertical={false} />
+            <YAxis type="number" domain={[0, 10]} />
+            <XAxis dataKey="range" tickLine={false} tickMargin={10} axisLine={false} domain={[0, 10]} />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend content={<ChartLegendContent />} />
             <Bar dataKey="age" fill="var(--color-age)" radius={4} label={{ position: 'top' }} />
@@ -95,11 +95,11 @@ const CardChartSurvey4 = () => {
         <CardTitle>Fuga de datos</CardTitle>
         <CardDescription>Confirmaciones</CardDescription>
       </CardHeader>
-      <CardContent className="flex-1 pb-0">
+      <CardContent className="flex-1 pb-0 scale-95">
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-1 text-xs text-center">
-        <div>El ~70% de la población que verificó con una herramienta pudo confirmar que sus datos habían sido vulnerados</div>
+        El ~70% de la población que verificó con una herramienta pudo confirmar que sus datos habían sido vulnerados
       </CardFooter>
     </Card>
   );
@@ -137,7 +137,7 @@ const CardChartSurvey5 = () => {
       </CardContent>
       <CardFooter className="flex-col gap-1 text-xs text-center">
         <div>Más de la mitad de la población nunca lee los Términos y Condiciones</div>
-        <div className="leading-none text-muted-foreground">Solo un ~4% de la población los lee siempre.</div>
+        <div>Solo un ~4% de la población los lee siempre.</div>
       </CardFooter>
     </Card>
   );
@@ -179,8 +179,9 @@ const CardChartSurvey6 = () => {
         <GenericPieChart chartData={chartData} config={chartConfig} />
       </CardContent>
       <CardFooter className="flex-col gap-1 text-xs text-center">
-        <div>De los 55,4% que nunca lee los T&C,</div><div>el 78.2% indicó que son demasiado largos.</div>
-        <div className="leading-none text-muted-foreground">Un 12.4% confía ciegamente en la empresa.</div>
+        <div>De los 55,4% que nunca lee los T&C,</div>
+        <div>el 78.2% indicó que son demasiado largos.</div>
+        <div>Un 12.4% confía ciegamente en la empresa.</div>
       </CardFooter>
     </Card>
   );
@@ -194,11 +195,11 @@ export const Page06Surveys = () => {
       </div>
       <div className="mb-8 p-5 bg-white rounded-2xl shadow">
         <p className="pStandard">
-          Se recolectó un total de <b>322</b> respuestas a la encuesta. En la población encuestada
-          predominan
-          las persona entre <b>25 y 35 años</b> (49.4%) seguido de menores de 25 años (22.7%). El rubro más popular fue
-          <b> Tecnología y Computación</b> (51.6%) seguido de 'Otros' (25.5%). El servicio en linea mas utilizado es <b>Redes sociales</b> (83.2.%) seguido de correo electrónico (46%).
-          Finalmente, el 72% son <b>Trabajadores activos</b> seguido de un 20.8% de Estudiantes.
+          Se recolectó un total de <b>322</b> respuestas a la encuesta. En la población encuestada predominan las
+          persona entre <b>25 y 35 años</b> (49.4%) seguido de menores de 25 años (22.7%). El rubro más popular fue
+          <b> Tecnología y Computación</b> (51.6%) seguido de 'Otros' (25.5%). El servicio en linea mas utilizado es{' '}
+          <b>Redes sociales</b> (83.2.%) seguido de correo electrónico (46%). Finalmente, el 72% son{' '}
+          <b>Trabajadores activos</b> seguido de un 20.8% de Estudiantes.
         </p>
       </div>
       <div className="flex flex-col gap-8">
@@ -206,7 +207,7 @@ export const Page06Surveys = () => {
           <CardChartSurvey1 />
           <CardChartSurvey4 />
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-8 z-10">
           <CardChartSurvey5 />
           <CardChartSurvey6 />
         </div>
