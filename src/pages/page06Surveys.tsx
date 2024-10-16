@@ -33,7 +33,7 @@ const CardChartSurvey1 = () => {
         <CardDescription>Preocupación por la privacidad de la información personal</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 flex justify-center items-center">
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="h-[200px] w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <YAxis type="number" domain={[0, 10]} />

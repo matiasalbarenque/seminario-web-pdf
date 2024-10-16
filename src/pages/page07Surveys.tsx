@@ -29,7 +29,7 @@ const CardChartSurvey1 = () => {
         <CardDescription></CardDescription>
       </CardHeader>
       <CardContent className="flex-1 flex justify-center items-center">
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="h-[185px]">
           <RadarChart data={chartData}>
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
             <PolarAngleAxis dataKey="month" />
